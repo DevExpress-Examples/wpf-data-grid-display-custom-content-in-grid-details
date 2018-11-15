@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[MainWindow.xaml](./CS/WpfApplication18/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication18/MainWindow.xaml))**
+* [MainWindow.xaml.cs](./CS/WpfApplication18/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfApplication18/MainWindow.xaml))
+<!-- default file list end -->
 # How to create a GridControl detail with custom content
 
 
