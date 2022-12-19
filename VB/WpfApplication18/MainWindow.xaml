@@ -1,39 +1,23 @@
-<Window xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"  x:Class="WpfApplication18.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="768" Width="1024" xmlns:my="clr-namespace:WpfApplication18" Loaded="Window_Loaded">
-    <Window.Resources>
-       
-    </Window.Resources>
-    <Grid x:Name="mainGrid">
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="32"/>
-        </Grid.RowDefinitions>
-        <!--region #GridDesignTime-->
-        <dxg:GridControl Grid.Row="0" Name="gridControl1" AutoGenerateColumns="AddNew" >
+<Window
+    x:Class="WpfApplication18.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <dxg:GridControl Name="grid" AutoGenerateColumns="AddNew">
             <dxg:GridControl.View>
-                <dxg:TableView DetailHeaderContent="Employees" AutoWidth="True" ShowGroupPanel="False"  />
+                <dxg:TableView DetailHeaderContent="Employees" AutoWidth="True" ShowGroupPanel="False"/>
             </dxg:GridControl.View>
             <dxg:GridControl.DetailDescriptor>
                 <dxg:ContentDetailDescriptor  HeaderContent="Notes">
                     <dxg:ContentDetailDescriptor.ContentTemplate>
-                        <DataTemplate >
-                            <Border>
-                                <TextBlock Text="{Binding Path=Notes}" TextWrapping="Wrap" ></TextBlock>
-                            </Border>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Notes}" TextWrapping="Wrap" Padding="4"/>
                         </DataTemplate>
                     </dxg:ContentDetailDescriptor.ContentTemplate>
                 </dxg:ContentDetailDescriptor>
             </dxg:GridControl.DetailDescriptor>
         </dxg:GridControl>
-        <!--endregion #GridDesignTime-->
-        
-        <Button Grid.Row="3" Click="Button_Click">
-            <TextBlock Text="Create Second Grid in Code"></TextBlock>
-        </Button>
-        <GridSplitter Grid.Row="1" Height="10" Name="gridSplitter1" VerticalAlignment="Center" Width="Auto" ResizeDirection="Rows" HorizontalAlignment="Stretch" />
     </Grid>
 </Window>
