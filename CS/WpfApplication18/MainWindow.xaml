@@ -10,7 +10,7 @@
                 <dxg:TableView DetailHeaderContent="Employees" AutoWidth="True" ShowGroupPanel="False"/>
             </dxg:GridControl.View>
             <dxg:GridControl.DetailDescriptor>
-                <dxg:ContentDetailDescriptor  HeaderContent="Notes">
+                <dxg:ContentDetailDescriptor>
                     <dxg:ContentDetailDescriptor.ContentTemplate>
                         <DataTemplate>
                             <TextBlock Text="{Binding Path=Notes}" TextWrapping="Wrap" Padding="4"/>
