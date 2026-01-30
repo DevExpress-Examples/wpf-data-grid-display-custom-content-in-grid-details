@@ -5,7 +5,8 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>WpfApplication18</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
@@ -40,6 +41,6 @@
     <PackageReference Include="DevExpress.Wpf.Printing" Version="24.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Reporting" Version="24.2.*-*" />
     <PackageReference Include="DevExpress.Wpf.Themes.All" Version="24.2.*-*" />
-    <PackageReference Include="System.Data.OleDB" Version="5.0" />
+    <PackageReference Include="System.Data.OleDB" Version="8.0.1" />
   </ItemGroup>
 </Project>
